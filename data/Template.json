@@ -19,7 +19,20 @@
  {
   "Title": "Robotics",
   "image": "../img/Templates/Robotics.jpg"
+ },
+ {
+  "Title": "ai",
+  "image": "../img/Templates/ai.jpg"
+ },
+ {
+  "Title": "Autonomous",
+  "image": "../img/Templates/Autonomous.jpg"
+ },
+ {
+  "Title": "BlockChain",
+  "image": "../img/Templates/BlockChain.jpg"
  }
+ 
  
 ]
 }
