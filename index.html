@@ -1,0 +1,313 @@
+!
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+        /* Rounded tabs */
+
+        @media (min-width: 576px) {
+            .rounded-nav {
+                border-radius: 50rem !important;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .rounded-nav .nav-link {
+                border-radius: 50rem !important;
+            }
+        }
+
+        /* With arrow tabs */
+
+        .with-arrow .nav-link.active {
+            position: relative;
+        }
+
+        .with-arrow .nav-link.active::after {
+            content: '';
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #2b90d9;
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+        }
+
+        /* lined tabs */
+
+        .lined .nav-link {
+            border: none;
+            border-bottom: 3px solid transparent;
+        }
+
+        .lined .nav-link:hover {
+            border: none;
+            border-bottom: 3px solid transparent;
+        }
+
+        .lined .nav-link.active {
+            background: none;
+            color: #555;
+            border-color: #2b90d9;
+        }
+
+        /*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+
+
+        .nav-pills .nav-link {
+            color: #555;
+        }
+
+        .text-uppercase {
+            letter-spacing: 0.1em;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="shadow border-bottom py-3">
+        <h2 class="text-center text-dark font-weight-bold ">DATA GRAPHIC GALLERY</h2>
+    </header>
+    <main>
+        <div class="container py-5">
+
+
+            <div class="p-5 bg-white rounded shadow mb-5">
+                <!-- Bordered tabs-->
+                <ul id="myTab1" role="tablist"
+                    class="nav nav-tabs nav-pills with-arrow flex-column flex-sm-row text-center">
+                    <li class="nav-item flex-sm-fill">
+                        <a id="home1-tab" data-toggle="tab" href="#infographic" role="tab" aria-controls="home1"
+                            aria-selected="true"
+                            class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border active">Infographics</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="profile1-tab" data-toggle="tab" href="#img_icon" role="tab" aria-controls="profile1"
+                            aria-selected="false"
+                            class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border">Images & Icon</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="contact1-tab" data-toggle="tab" href="#Templtes" role="tab" aria-controls="contact1"
+                            aria-selected="false"
+                            class="nav-link text-uppercase font-weight-bold rounded-0 border">Templates</a>
+                    </li>
+
+                    <li class="nav-item flex-sm-fill">
+                        <a id="contact1-tab" data-toggle="tab" href="#elements" role="tab" aria-controls="contact1"
+                            aria-selected="false"
+                            class="nav-link text-uppercase font-weight-bold rounded-0 border">Elements</a>
+                    </li>
+                </ul>
+                <div id="myTab1Content" class="tab-content">
+                    <div id="infographic" role="tabpanel" aria-labelledby="home-tab"
+                        class="tab-pane fade px-4 py-5 show active">
+                        <div class="row mx-0" id="infographic_block">
+                                
+                        </div>
+                    </div>
+                    <div id="img_icon" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
+                            <h3> Images & Icons</h3>
+                    </div>
+                    <div id="Templtes" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+
+
+
+
+
+                           <div class="row mx-0" id="tempalte">
+                                
+                            </div>
+                           
+                    </div>
+
+                    <div id="elements" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+                        <h3> Infographic Elements</h3>
+                    </div>
+                </div>
+                <!-- End bordered tabs -->
+            </div>
+
+
+
+
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+<!--============================
+            MAP SCRIPT Template
+==============================-->
+<script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $.getJSON("./data/Template.json", function (data) {
+            console.log(data)
+            var output = '';
+            $.each(data.templte, function (key, value) {
+                output += `<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-2"><div class="card"><img src="` + value.image  + `" class="img-fluid"/><div class="card-body text-center border-top p-2"><h5 class="card-title " style="text-transform: uppercase;">` + value.Title + `</h5></div></div></div>`; 
+            
+            });
+            $('#tempalte').html(output);
+        }).fail(function () {
+            document.write("An error has occurred.");
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $.getJSON("./data/infographic.json", function (data) {
+            console.log(data)
+            var output = '';
+            $.each(data.infographic, function (key, value) {
+                output += `<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-2"><div class="card"><img src="` + value.path  + `" class="img-fluid"/><div class="card-body text-center border-top p-2"><h5 class="card-title " style="text-transform: uppercase;">` + value.name + `</h5></div></div></div>`; 
+            
+            });
+            $('#infographic_block').html(output);
+        }).fail(function () {
+            document.write("An error has occurred.");
+        });
+    });
+</script>
+
+
+</body>
+
+
+<script>
+
+    const $tabsToDropdown = $(".tabs-to-dropdown");
+
+    function generateDropdownMarkup(container) {
+        const $navWrapper = container.find(".nav-wrapper");
+        const $navPills = container.find(".nav-pills");
+        const firstTextLink = $navPills.find("li:first-child a").text();
+        const $items = $navPills.find("li");
+        const markup = `
+    <div class="dropdown d-md-none">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        ${firstTextLink}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> 
+        ${generateDropdownLinksMarkup($items)}
+      </div>
+    </div>
+  `;
+        $navWrapper.prepend(markup);
+    }
+
+    function generateDropdownLinksMarkup(items) {
+        let markup = "";
+        items.each(function () {
+            const textLink = $(this).find("a").text();
+            markup += `<a class="dropdown-item" href="#">${textLink}</a>`;
+        });
+
+        return markup;
+    }
+
+    function showDropdownHandler(e) {
+        // works also
+        //const $this = $(this);
+        const $this = $(e.target);
+        const $dropdownToggle = $this.find(".dropdown-toggle");
+        const dropdownToggleText = $dropdownToggle.text().trim();
+        const $dropdownMenuLinks = $this.find(".dropdown-menu a");
+        const dNoneClass = "d-none";
+        $dropdownMenuLinks.each(function () {
+            const $this = $(this);
+            if ($this.text() == dropdownToggleText) {
+                $this.addClass(dNoneClass);
+            } else {
+                $this.removeClass(dNoneClass);
+            }
+        });
+    }
+
+    function clickHandler(e) {
+        e.preventDefault();
+        const $this = $(this);
+        const index = $this.index();
+        const text = $this.text();
+        $this.closest(".dropdown").find(".dropdown-toggle").text(`${text}`);
+        $this
+            .closest($tabsToDropdown)
+            .find(`.nav-pills li:eq(${index}) a`)
+            .tab("show");
+    }
+
+    function shownTabsHandler(e) {
+        // works also
+        //const $this = $(this);
+        const $this = $(e.target);
+        const index = $this.parent().index();
+        const $parent = $this.closest($tabsToDropdown);
+        const $targetDropdownLink = $parent.find(".dropdown-menu a").eq(index);
+        const targetDropdownLinkText = $targetDropdownLink.text();
+        $parent.find(".dropdown-toggle").text(targetDropdownLinkText);
+    }
+
+    $tabsToDropdown.each(function () {
+        const $this = $(this);
+        const $pills = $this.find('a[data-toggle="pill"]');
+
+        generateDropdownMarkup($this);
+
+        const $dropdown = $this.find(".dropdown");
+        const $dropdownLinks = $this.find(".dropdown-menu a");
+
+        $dropdown.on("show.bs.dropdown", showDropdownHandler);
+        $dropdownLinks.on("click", clickHandler);
+        $pills.on("shown.bs.tab", shownTabsHandler);
+    });
+
+
+
+
+</script>
+
+</html>

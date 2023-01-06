@@ -1,0 +1,25 @@
+{
+"templte":[
+ {
+  "Title": "Dei",
+  "image": "./img/Templates/Dei.jpg"
+ },
+ {
+  "Title": "Gaming",
+  "image": "./img/Templates/Gaming.jpg"
+ },
+ {
+  "Title": "HealthTech",
+  "image": "./img/Templates/HealthTech.jpg"
+ },
+ {
+  "Title": "Metaverse",
+  "image": "./img/Templates/Metaverse.jpg"
+ },
+ {
+  "Title": "Robotics",
+  "image": "../img/Templates/Robotics.jpg"
+ }
+ 
+]
+}
